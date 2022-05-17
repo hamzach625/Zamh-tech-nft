@@ -1,0 +1,145 @@
+.top{
+    .upper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 38px;
+        .left{
+            h1{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 56px;
+                color: #FFFFFF;
+            }
+        }
+        .right{
+            p{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .down{
+        margin-bottom: 62px;
+        button{
+            background: rgba(3, 33, 74, 0.8);
+            border-radius: 10px;
+            padding: 5px;
+            width: 141px;
+            height: 32px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin-right: 22px;
+            &:hover{
+                background: #15AC33;
+            }
+        }
+    }
+    .bottom-cards{
+       .cards{
+        padding: 16px;
+        background: rgba(3, 33, 74, 0.8);
+        border-radius: 24px;
+        margin-bottom: 40px;
+        width: 270px;
+        height: 104px;
+        .bottom-btn{
+            display: flex;
+            justify-content: center;
+            margin: -37px auto;
+            button{
+                background: #15AC33;
+                border-radius: 10px;
+                padding: 10px 35px;
+                img{
+                    margin-right: 30px;
+                }
+            }
+        }
+       }
+       .bottom-item{
+           display: flex;
+           justify-content: flex-start;
+           .profile{
+               margin-right: 12px;
+           }
+           .text{
+               display: flex;
+               justify-content: center;
+               flex-direction: column;
+               h6{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 32px;
+                color: #FFFFFF;
+               }
+               p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(131, 147, 175, 0.95);
+               }
+               .inner_icon{
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                .likes{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    p{
+                        margin-top: 7px;
+                    }
+                   }
+               }
+           }
+           
+       }
+    }
+}
+.allcards{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+@media(max-width:991px){
+    .top .upper{
+        justify-content: center;
+    }
+    .allcards{
+        display: flex;
+    justify-content: flex-start;
+    align-items: center !important;
+    overflow-x: scroll !important;
+    flex-wrap: unset !important;
+    }
+}
+@media(max-width:430px){
+    .top .upper{
+        flex-wrap: wrap;
+    }
+    .top .upper .left{
+        width: 100% !important;
+    }
+    .top .upper .left h1{
+        text-align: center !important;
+    }
+    .top .upper .right p{
+        text-align: center !important;
+    }
+    .top .upper .right {
+        width: 100% !important;
+    }
+}
